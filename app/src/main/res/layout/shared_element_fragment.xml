@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imageViewId"
+        style="@style/MaterialAnimations.Icon.Big"
+        android:transitionName="@string/square_blue_name" />
+
+    <TextView
+        android:id="@+id/itemname"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/imageViewId"
+        android:layout_marginRight="20dp"
+        android:visibility="visible"
+        android:transitionName="@string/square_green_name"
+        android:text="Fragment" />
+</RelativeLayout>
+
+
+    <TextView
+        style="@style/MaterialAnimations.Text.Body"
+        android:gravity="center|bottom"
+        android:text="ImagePlace Holder is a shared element between MainActivity and this fragment." />
+
+   <!-- <Button
+        android:id="@+id/sample2_button1"
+        android:text="Next (Overlap transition = false)"
+        style="@style/MaterialAnimations.Button" />
+
+    <Button
+        android:id="@+id/sample2_button2"
+        android:text="Next (Overlap transition =  true)"
+        style="@style/MaterialAnimations.Button" />
+-->
+</LinearLayout>
